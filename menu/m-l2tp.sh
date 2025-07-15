@@ -1,40 +1,28 @@
 #!/bin/bash
+MYIP=$(wget -qO- ipv4.icanhazip.com);
+echo "Checking VPS"
 clear
-m="\033[0;1;36m"
-y="\033[0;1;37m"
-yy="\033[0;1;32m"
-yl="\033[0;1;33m"
-wh="\033[0m"
-echo -e "$y                             L2TP $wh"
-echo -e "$y-------------------------------------------------------------$wh"
-echo -e "$yy 1$y. Create Account L2TP"
-echo -e "$yy 2$y. Delete Account L2TP"
-echo -e "$yy 3$y. Extending Account L2TP Active Life"
-echo -e "$yy 4$y. Menu"
-echo -e "$yy 5$y. Exit"
-echo -e "$y-------------------------------------------------------------$wh"
-read -p "Select From Options [ 1 - 7 ] : " menu
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "\E[0;100;33m      • L2TP MENU •          \E[0m"
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e ""
-case $menu in
-1)
-addl2tp
-;;
-2)
-dell2tp
-;;
-3)
-renewl2tp
-;;
-4)
-clear
-menu
-;;
-5)
-clear
-exit
-;;
-*)
-clear
-menu
-;;
+echo -e " [\e[36m•1\e[0m] Buat Akun L2TP "
+echo -e " [\e[36m•2\e[0m] Hapus Akun L2TP "
+echo -e " [\e[36m•3\e[0m] Perpanjang Akun L2TP "
+echo -e ""
+echo -e " [\e[31m•0\e[0m] \e[31mBACK TO MENU\033[0m"
+echo -e   ""
+echo -e   "Press x or [ Ctrl+C ] • To-Exit"
+echo ""
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e ""
+read -p " Select menu : " opt
+echo -e ""
+case $opt in
+1) clear ; addl2tp ;;
+2) clear ; dell2tp ;;
+3) clear ; renewl2tp ;;
+0) clear ; menu ;;
+x) exit ;;
+*) echo "Anda Salah Tekan" ; sleep 1 ; m-trojan ;;
 esac
