@@ -1,9 +1,9 @@
 #!/bin/bash
 # Quick Setup | Script Setup Manager
 # Edition : Stable Edition 1.0
-# Auther  : givpn
-# Kuota Habisss
-# (C) Copyright 2023
+# Auther  : RAKHA-VPN
+# Kuota Habisss mgemis Solusinya
+# (C) Copyright 2025
 # =========================================
 # pewarna hidup
 BGreen='\e[1;32m'
@@ -15,8 +15,8 @@ rm -rf /usr/bin/clearcache
 rm -rf /usr/bin/menu
 echo "\e[1;32m Update Menu.. \e[0m"
 sleep 1
-wget -q -O /usr/bin/clearcache https://raw.githubusercontent.com/jauharimtikhan/AutoScriptVps/master/menu/clearcache.sh
-wget -q -O /usr/bin/menu https://raw.githubusercontent.com/jauharimtikhan/AutoScriptVps/master/menu/menu.sh
+wget -q -O /usr/bin/clearcache https://raw.githubusercontent.com/yanzwrt/AutoScriptVps/master/menu/clearcache.sh
+wget -q -O /usr/bin/menu https://raw.githubusercontent.com/yanzwrt/AutoScriptVps/master/menu/menu.sh
 sleep 1
 chmod +x /usr/bin/clearcache
 chmod +x /usr/bin/menu
