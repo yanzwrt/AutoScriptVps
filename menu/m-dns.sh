@@ -17,21 +17,21 @@ MYIP=$(wget -qO- ipv4.icanhazip.com);
 echo "Checking VPS"
 clear
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "$y            DNS CHANGER$wh"
+echo -e "$y            PENGUBAH DNS $wh"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 dnsfile="/root/dns"
 if test -f "$dnsfile"; then
 udns=$(cat /root/dns)
 echo -e ""
-echo -e "Active DNS : $udns"
+echo -e "DNS Aktif : $udns"
 fi
 echo -e ""
 echo -e " [\e[36m•1\e[0m] UBAH DNS"
 echo -e " [\e[36m•2\e[0m] Setel Ulang DNS Ke Default"
 echo -e ""
-echo -e "\e[1;34m 0 BACK TO MENU \e[0m"
+echo -e "\e[1;34m 0 KEMBALI KE MENU \e[0m"
 echo -e ""
-read -p "Select From Options [ 1 - 2 ] or 0 Back To Menu :  " dns
+read -p "Pilih Dari Opsi [ 1 - 2 ] atau 0 kembali ke Menu :  " dns
 echo -e ""
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 case $dns in
