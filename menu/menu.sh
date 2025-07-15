@@ -54,8 +54,8 @@ dmon="$(vnstat -i eth0 -m | grep "`date +"%b '%y"`" | awk '{print $3" "substr ($
 umon="$(vnstat -i eth0 -m | grep "`date +"%b '%y"`" | awk '{print $6" "substr ($7, 1, 1)}')"
 tmon="$(vnstat -i eth0 -m | grep "`date +"%b '%y"`" | awk '{print $9" "substr ($10, 1, 1)}')"
 # user
-Exp2=$"Lifetime"
-Name=$"JOE-VPN"
+Exp2=$"seumur hidup"
+Name=$"RAKHA-VPN"
 # Getting CPU Information
 cpu_usage1="$(ps aux | awk 'BEGIN {sum=0} {sum+=$3}; END {print sum}')"
 cpu_usage="$((${cpu_usage1/\.*} / ${corediilik:-1}))"
@@ -113,7 +113,7 @@ echo -e "\e[1;32m Client Name \e[0m: $Name"
 echo -e "\e[1;32m Expired     \e[0m: $Exp2"
 echo -e "\e[1;33m -------------------------------------------------\e[0m"
 echo -e   ""
-echo -e "\e[1;36m --------------------RAKHA-VPN---------------\e[0m"
+echo -e "\e[1;36m ----------------RAKHA PUTRA ANDRIAN---------------\e[0m"
 echo -e   ""
 read -p " Select menu :  "  opt
 echo -e   ""
