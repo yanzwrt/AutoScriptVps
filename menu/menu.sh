@@ -103,10 +103,11 @@ echo -e "\e[1;36m 3 \e[0m: Menu Vless"
 echo -e "\e[1;36m 4 \e[0m: Menu Trojan"
 echo -e "\e[1;36m 5 \e[0m: Menu Shadowsocks"
 echo -e "\e[1;36m 6 \e[0m: Menu L2TP"
-echo -e "\e[1;36m 7 \e[0m: Menu Setting"
-echo -e "\e[1;36m 8 \e[0m: Status Service"
-echo -e "\e[1;36m 9 \e[0m: Clear RAM Cache"
-echo -e "\e[1;36m 10 \e[0m: Reboot VPS"
+echo -e "\e[1;36m 7 \e[0m: Menu PPTP"
+echo -e "\e[1;36m 8 \e[0m: Menu Setting"
+echo -e "\e[1;36m 9 \e[0m: Status Service"
+echo -e "\e[1;36m 10 \e[0m: Clear RAM Cache"
+echo -e "\e[1;36m 11 \e[0m: Reboot VPS"
 echo -e "\e[1;36m x \e[0m: Exit Script"
 echo -e   ""
 echo -e "\e[1;33m -------------------------------------------------\e[0m"
@@ -125,10 +126,11 @@ case $opt in
 4) clear ; m-trojan ;;
 5) clear ; m-ssws ;;
 6) clear ; m-l2tp ;;
-7) clear ; m-system ;;
-8) clear ; running ;;
-9) clear ; clearcache ;;
-10) clear ; reboot ; /sbin/reboot ;;
+7) clear ; m-pptp ;;
+8) clear ; m-system ;;
+9) clear ; running ;;
+10) clear ; clearcache ;;
+11) clear ; reboot ; /sbin/reboot ;;
 x) exit ;;
 *) echo "Anda salah tekan " ; sleep 1 ; menu ;;
 esac
