@@ -20,13 +20,13 @@ apt -y install squid3
 sleep 1
 echo "\e[1;32m Proses Download squid.. \e[0m"
 apt -y install squid
-wget -O /etc/squid/squid.conf "https://raw.githubusercontent.com/jauharimtikhan/AutoScriptVps/master/udp-custom/openvpn/squid3.conf"
+wget -O /etc/squid/squid.conf "https://raw.githubusercontent.com/yanzwrt/AutoScriptVps/master/udp-custom/openvpn/squid3.conf"
 sed -i $MYIP2 /etc/squid/squid.conf
 
 # // OpenVPN
 sleep 1
 echo "\e[1;32m Proses Download OpenVPN.. \e[0m"
-wget https://raw.githubusercontent.com/jauharimtikhan/AutoScriptVps/master/udp-custom/openvpn/vpn.sh &&  chmod +x vpn.sh && ./vpn.sh
+wget https://raw.githubusercontent.com/yanzwrt/AutoScriptVps/master/udp-custom/openvpn/vpn.sh &&  chmod +x vpn.sh && ./vpn.sh
 
 cd
 chown -R www-data:www-data /home/vps/public_html
@@ -94,7 +94,7 @@ echo "   - Trojan gRPC              : 443" | tee -a log-install.txt
 echo "   - Shadowsocks gRPC         : 443" | tee -a log-install.txt
 echo ""
 echo "=============================Contact==============================" | tee -a log-install.txt
-echo "---------------------------Jauhar-Imtikhan------------------------" | tee -a log-install.txt
+echo "----------------------------RAKHA-VPN-----------------------------" | tee -a log-install.txt
 echo "==================================================================" | tee -a log-install.txt
 echo -e ""
 echo ""
