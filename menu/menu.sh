@@ -102,20 +102,21 @@ echo -e "\e[1;36m 2 \e[0m: Menu Vmess"
 echo -e "\e[1;36m 3 \e[0m: Menu Vless"
 echo -e "\e[1;36m 4 \e[0m: Menu Trojan"
 echo -e "\e[1;36m 5 \e[0m: Menu Shadowsocks"
-echo -e "\e[1;36m 6 \e[0m: Menu Setting"
-echo -e "\e[1;36m 7 \e[0m: Status Service"
-echo -e "\e[1;36m 8 \e[0m: Clear RAM Cache"
-echo -e "\e[1;36m 9 \e[0m: Reboot VPS"
+echo -e "\e[1;36m 6 \e[0m: Menu L2TP"
+echo -e "\e[1;36m 7 \e[0m: Menu Setting"
+echo -e "\e[1;36m 8 \e[0m: Status Service"
+echo -e "\e[1;36m 9 \e[0m: Clear RAM Cache"
+echo -e "\e[1;36m 10 \e[0m: Reboot VPS"
 echo -e "\e[1;36m x \e[0m: Exit Script"
 echo -e   ""
 echo -e "\e[1;33m -------------------------------------------------\e[0m"
-echo -e "\e[1;32m Client Name \e[0m: $Name"
-echo -e "\e[1;32m Expired     \e[0m: $Exp2"
+echo -e "\e[1;32m Nama Pengguna \e[0m: $Name"
+echo -e "\e[1;32m Masa Berlaku     \e[0m: $Exp2"
 echo -e "\e[1;33m -------------------------------------------------\e[0m"
 echo -e   ""
 echo -e "\e[1;36m ----------------RAKHA PUTRA ANDRIAN---------------\e[0m"
 echo -e   ""
-read -p " Select menu :  "  opt
+read -p " Pilih Menu :  "  opt
 echo -e   ""
 case $opt in
 1) clear ; m-sshovpn ;;
@@ -123,10 +124,11 @@ case $opt in
 3) clear ; m-vless ;;
 4) clear ; m-trojan ;;
 5) clear ; m-ssws ;;
-6) clear ; m-system ;;
-7) clear ; running ;;
-8) clear ; clearcache ;;
-9) clear ; reboot ; /sbin/reboot ;;
+6) clear ; m-l2tp ;;
+7) clear ; m-system ;;
+8) clear ; running ;;
+9) clear ; clearcache ;;
+10) clear ; reboot ; /sbin/reboot ;;
 x) exit ;;
 *) echo "Anda salah tekan " ; sleep 1 ; menu ;;
 esac
