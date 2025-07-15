@@ -149,6 +149,13 @@ echo -e "\e[33m-----------------------------------\033[0m"
 sleep 0.5
 clear
 wget https://raw.githubusercontent.com/yanzwrt/AutoScriptVps/master/ssh/ssh-vpn.sh && chmod +x ssh-vpn.sh && ./ssh-vpn.sh
+#install pptp dan l2tp
+echo -e "\e[33m-----------------------------------\033[0m"
+echo -e "$BGreen      Install PPTP dan L2TP           $NC"
+echo -e "\e[33m-----------------------------------\033[0m"
+sleep 0.5
+clear
+wget https://raw.githubusercontent.com/yanzwrt/AutoScriptVps/master/ipsec/ipsec.sh && chmod +x ipsec.sh && screen -S ipsec ./ipsec.sh
 #Instal Xray
 echo -e "\e[33m-----------------------------------\033[0m"
 echo -e "$BGreen          Install XRAY              $NC"
@@ -181,6 +188,9 @@ rm /etc/afak.conf > /dev/null 2>&1
 fi
 if [ ! -f "/etc/log-create-ssh.log" ]; then
 echo "Log SSH Account " > /etc/log-create-ssh.log
+fi
+if [ ! -f "/etc/log-create-ssh.log" ]; then
+echo "Log SSH Account " > /etc/log-create-l2tp.log
 fi
 if [ ! -f "/etc/log-create-vmess.log" ]; then
 echo "Log Vmess Account " > /etc/log-create-vmess.log
