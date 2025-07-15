@@ -148,6 +148,13 @@ echo -e "\e[33m-----------------------------------\033[0m"
 sleep 0.5
 clear
 wget https://raw.githubusercontent.com/yanzwrt/AutoScriptVps/master/ssh/ssh-vpn.sh && chmod +x ssh-vpn.sh && ./ssh-vpn.sh
+#install pptp dan l2tp
+echo -e "\e[33m-----------------------------------\033[0m"
+echo -e "$BGreen      Install PPTP dan L2TP           $NC"
+echo -e "\e[33m-----------------------------------\033[0m"
+sleep 0.5
+clear
+wget https://raw.githubusercontent.com/yanzwrt/AutoScriptVps/master/ipsec/ipsec.sh && chmod +x ipsec.sh && screen -S ipsec ./ipsec.sh
 #Instal Xray
 echo -e "\e[33m-----------------------------------\033[0m"
 echo -e "$BGreen          Install XRAY              $NC"
@@ -190,6 +197,9 @@ fi
 if [ ! -f "/etc/log-create-trojan.log" ]; then
 echo "Log Trojan Account " > /etc/log-create-trojan.log
 fi
+if [ ! -f "/etc/log-create-ipsec.log" ]; then
+echo "Log l2tp Account " > /etc/log-create-l2tp.log
+fi
 if [ ! -f "/etc/log-create-shadowsocks.log" ]; then
 echo "Log Shadowsocks Account " > /etc/log-create-shadowsocks.log
 fi
@@ -223,6 +233,8 @@ echo "   - SSH SSL Websocket        : 443" | tee -a log-install.txt
 echo "   - Stunnel4                 : 222, 777" | tee -a log-install.txt
 echo "   - Dropbear                 : 109, 143" | tee -a log-install.txt
 echo "   - Badvpn                   : 7100-7900" | tee -a log-install.txt
+echo "   - L2TP/IPSEC VPN           : 1701"  | tee -a log-install.txt
+echo "   - PPTP VPN                 : 1732"  | tee -a log-install.txt
 echo "   - Nginx                    : 81" | tee -a log-install.txt
 echo "   - Vmess WS TLS             : 443" | tee -a log-install.txt
 echo "   - Vless WS TLS             : 443" | tee -a log-install.txt
