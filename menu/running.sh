@@ -195,7 +195,7 @@ kernelku=$(uname -r)
 
 # DNS PATCH
 #tipeos2=$(uname -m)
-Name=$"JOE-VPN"
+Name=$"RAKHA-VPN"
 Exp=$"Lifetime"
 # GETTING DOMAIN NAME
 Domen="$(cat /etc/xray/domain)"
@@ -211,9 +211,9 @@ echo -e "\e[1;32m Domain    \e[0m: $Domen"
 echo -e "\e[1;33m -------------------------------------------------\e[0m"
 echo -e "\e[1;34m              SUBSCRIPTION INFORMATION            \e[0m"
 echo -e "\e[1;33m -------------------------------------------------\e[0m"
-echo -e "\e[1;32m Client Name \e[0m: $Name"
+echo -e "\e[1;32m Nama Pengguna \e[0m: $Name"
 echo -e "\e[1;32m Exp Script  \e[0m: $Exp"
-echo -e "\e[1;32m Version     \e[0m: 1.0"
+echo -e "\e[1;32m Version     \e[0m: 2.0"
 echo -e "\e[1;33m -------------------------------------------------\e[0m"
 echo -e "\e[1;34m                SERVICE INFORMATION               \e[0m"
 echo -e "\e[1;33m -------------------------------------------------\e[0m"
@@ -232,9 +232,9 @@ echo -e "\e[1;32m Shadowsocks          \e[0m: $status_shadowsocks"
 echo -e "\e[1;32m Websocket TLS        \e[0m: $swstls"
 echo -e "\e[1;32m Websocket None TLS   \e[0m: $swstls"
 echo -e "\e[1;33m -------------------------------------------------\e[0m"
-echo -e "\e[1;34m                     Jauhar-Imtikhan               \e[0m"
+echo -e "\e[1;34m                       RAKHA-VPN                  \e[0m"
 echo -e "\e[1;33m -------------------------------------------------\e[0m"
 echo ""
-read -n 1 -s -r -p "Press any key to back on menu"
+read -n 1 -s -r -p "Tekan apa saja untuk kembali ke menu"
 menu
 
