@@ -13,13 +13,13 @@ sleep 2
 cd
 
 # // GIT USER
-GitUser="jauharimtikhan"
+GitUser="yanzwrt"
 
 # // SYSTEM WEBSOCKET HTTPS 443
 cat <<EOF> /etc/systemd/system/ws-https.service
 [Unit]
 Description=Python Proxy
-Documentation=https://github.com/jauharimtikhan/
+Documentation=https://github.com/yanzwrt/
 After=network.target nss-lookup.target
 
 [Service]
