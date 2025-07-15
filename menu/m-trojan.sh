@@ -13,13 +13,13 @@ echo -e " [\e[36m•4\e[0m] Hapus Akun Trojan "
 echo -e " [\e[36m•5\e[0m] Cek Pengguna Masuk Trojan "
 echo -e " [\e[36m•6\e[0m] Daftar Pengguna Buat Akun "
 echo -e ""
-echo -e " [\e[31m•0\e[0m] \e[31mBACK TO MENU\033[0m"
+echo -e " [\e[31m•0\e[0m] \e[31mKEMBALI KE MENU\033[0m"
 echo -e   ""
-echo -e   "Press x or [ Ctrl+C ] • To-Exit"
+echo -e   "Press x or [ Ctrl+C ] • untuk keluar"
 echo ""
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e ""
-read -p " Select menu : " opt
+read -p " pilih menu : " opt
 echo -e ""
 case $opt in
 1) clear ; add-tr ;;
