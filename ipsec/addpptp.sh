@@ -1,30 +1,12 @@
 #!/bin/bash
-# My Telegram : https://t.me/Akbar218
-# ==========================================
-# Color
-RED='\033[0;31m'
-NC='\033[0m'
-GREEN='\033[0;32m'
-ORANGE='\033[0;33m'
-BLUE='\033[0;34m'
-PURPLE='\033[0;35m'
-CYAN='\033[0;36m'
-LIGHT='\033[0;37m'
-# ==========================================
-# Getting
-MYIP=$(wget -qO- ipinfo.io/ip);
+MYIP=$(wget -qO- ipv4.icanhazip.com);
 echo "Checking VPS"
 clear
+source /var/lib/ipvps.conf
 if [[ "$IP" = "" ]]; then
-PUBLIC_IP=$(wget -qO- ipinfo.io/ip);
-else
-PUBLIC_IP=$IP
-fi
-source /var/lib/akbarstorevpn/ipvps.conf
-if [[ "$IP2" = "" ]]; then
 domain=$(cat /etc/xray/domain)
 else
-domain=$IP2
+domain=$IP
 fi
 until [[ $VPN_USER =~ ^[a-zA-Z0-9_]+$ && ${CLIENT_EXISTS} == '0' ]]; do
 		read -rp "Username : " -e VPN_USER
