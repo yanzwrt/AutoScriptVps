@@ -15,7 +15,7 @@ NUMBER_OF_CLIENTS=$(grep -c -E "^### " "/var/lib/rakhastorevpn/data-user-pptp")
 	echo " Press CTRL+C to return"
 	echo " ==============================="
 	echo "     No  Expired   User"
-	grep -E "^### " "/var/lib/akbarstorevpn/data-user-pptp" | cut -d ' ' -f 2-3 | nl -s ') '
+	grep -E "^### " "/var/lib/rakhastorevpn/data-user-pptp" | cut -d ' ' -f 2-3 | nl -s ') '
 	until [[ ${CLIENT_NUMBER} -ge 1 && ${CLIENT_NUMBER} -le ${NUMBER_OF_CLIENTS} ]]; do
 		if [[ ${CLIENT_NUMBER} == '1' ]]; then
 			read -rp "Select One Client[1]: " CLIENT_NUMBER
@@ -24,11 +24,11 @@ NUMBER_OF_CLIENTS=$(grep -c -E "^### " "/var/lib/rakhastorevpn/data-user-pptp")
 		fi
 	done
 # match the selected number to a client name
-VPN_USER=$(grep -E "^### " "/var/lib/akbarstorevpn/data-user-pptp" | cut -d ' ' -f 2 | sed -n "${CLIENT_NUMBER}"p)
-exp=$(grep -E "^### " "/var/lib/akbarstorevpn/data-user-pptp" | cut -d ' ' -f 3 | sed -n "${CLIENT_NUMBER}"p)
+VPN_USER=$(grep -E "^### " "/var/lib/rakhastorevpn/data-user-pptp" | cut -d ' ' -f 2 | sed -n "${CLIENT_NUMBER}"p)
+exp=$(grep -E "^### " "/var/lib/rakhastorevpn/data-user-pptp" | cut -d ' ' -f 3 | sed -n "${CLIENT_NUMBER}"p)
 # Delete VPN user
 sed -i '/^"'"$VPN_USER"'" pptpd/d' /etc/ppp/chap-secrets
-sed -i "/^### $VPN_USER $exp/d" /var/lib/akbarstorevpn/data-user-pptp
+sed -i "/^### $VPN_USER $exp/d" /var/lib/rakhastorevpn/data-user-pptp
 # Update file attributes
 chmod 600 /etc/ppp/chap-secrets* /etc/ipsec.d/passwd*
 clear
