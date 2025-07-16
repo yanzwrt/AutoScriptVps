@@ -295,12 +295,12 @@ mkdir -p /run/pluto
 service fail2ban restart 2>/dev/null
 service ipsec restart 2>/dev/null
 service xl2tpd restart 2>/dev/null
-wget -O /usr/bin/addl2tp https://${rakhavpn}/addl2tp.sh && chmod +x /usr/bin/addl2tp
-wget -O /usr/bin/dell2tp https://${rakhavpn}/dell2tp.sh && chmod +x /usr/bin/dell2tp
-wget -O /usr/bin/addpptp https://${rakhavpn}/addpptp.sh && chmod +x /usr/bin/addpptp
-wget -O /usr/bin/delpptp https://${rakhavpn}/delpptp.sh && chmod +x /usr/bin/delpptp
-wget -O /usr/bin/renewpptp https://${rakhavpn}/renewpptp.sh && chmod +x /usr/bin/renewpptp
-wget -O /usr/bin/renewl2tp https://${rakhavpn}/renewl2tp.sh && chmod +x /usr/bin/renewl2tp
+wget https://raw.githubusercontent.com/yanzwrt/AutoScriptVps/master/ipsec/addl2tp.sh && chmod +x /usr/bin/addl2tp
+wget https://raw.githubusercontent.com/yanzwrt/AutoScriptVps/master/ipsec/dell2tp.sh && chmod +x /usr/bin/dell2tp
+wget https://raw.githubusercontent.com/yanzwrt/AutoScriptVps/master/ipsec/addpptp.sh && chmod +x /usr/bin/addpptp
+wget https://raw.githubusercontent.com/yanzwrt/AutoScriptVps/master/ipsec/delpptp.sh && chmod +x /usr/bin/delpptp
+wget https://raw.githubusercontent.com/yanzwrt/AutoScriptVps/master/ipsec/renewpptp.sh && chmod +x /usr/bin/renewpptp
+wget https://raw.githubusercontent.com/yanzwrt/AutoScriptVps/master/ipsec/renewl2tp.sh && chmod +x /usr/bin/renewl2tp
 touch /var/lib/rakhastorevpn/data-user-l2tp
 touch /var/lib/rakhastorevpn/data-user-pptp
 rm -f /root/ipsec.sh
