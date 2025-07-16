@@ -56,13 +56,13 @@ echo -e "Network        : ws" | tee -a /etc/log-create-vless.log
 echo -e "Path           : /vless" | tee -a /etc/log-create-vless.log
 echo -e "Path           : vless-grpc" | tee -a /etc/log-create-vless.log
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-vless.log
+echo -e "Expired On     : $exp" | tee -a /etc/log-create-vless.log
+echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-vless.log
 echo -e "Link TLS       : ${vlesslink1}" | tee -a /etc/log-create-vless.log
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-vless.log
 echo -e "Link none TLS  : ${vlesslink2}" | tee -a /etc/log-create-vless.log
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-vless.log
 echo -e "Link gRPC      : ${vlesslink3}" | tee -a /etc/log-create-vless.log
-echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-vless.log
-echo -e "Expired On     : $exp" | tee -a /etc/log-create-vless.log
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-vless.log
 echo "" | tee -a /etc/log-create-vless.log
 read -n 1 -s -r -p "Tekan apa saja untuk kembali ke menu"
