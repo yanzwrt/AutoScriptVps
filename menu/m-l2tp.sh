@@ -24,5 +24,5 @@ case $opt in
 3) clear ; renewl2tp ;;
 0) clear ; menu ;;
 x) exit ;;
-*) echo "Anda Salah Tekan" ; sleep 1 ; m-trojan ;;
+*) echo "Anda Salah Tekan" ; sleep 1 ; m-l2tp ;;
 esac
