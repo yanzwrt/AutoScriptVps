@@ -2,36 +2,27 @@
 MYIP=$(wget -qO- ipv4.icanhazip.com);
 echo "Checking VPS"
 clear
-echo -e "$y                             PPTP $wh"
-echo -e "$y-------------------------------------------------------------$wh"
-echo -e "$yy 1$y. Create Account PPTP"
-echo -e "$yy 2$y. Delete Account PPTP"
-echo -e "$yy 3$y. Extending Account PPTP Active Life"
-echo -e "$yy 4$y. Menu"
-echo -e "$yy 5$y. Exit"
-echo -e "$y-------------------------------------------------------------$wh"
-read -p "Select From Options [ 1 - 5 ] : " menu
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "\E[0;100;33m      • PPTP MENU •          \E[0m"
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e ""
-case $menu in
-1)
-addpptp
-;;
-2)
-delpptp
-;;
-3)
-renewpptp
-;;
-4)
-clear
-menu
-;;
-5)
-clear
-exit
-;;
-*)
-clear
-menu
-;;
+echo -e " [\e[36m•1\e[0m] Buat Akun PPTP "
+echo -e " [\e[36m•2\e[0m] Hapus Akun PPTP "
+echo -e " [\e[36m•3\e[0m] Perpanjang Akun PPTP "
+echo -e ""
+echo -e " [\e[31m•0\e[0m] \e[31mBACK TO MENU\033[0m"
+echo -e   ""
+echo -e   "Press x or [ Ctrl+C ] • To-Exit"
+echo ""
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e ""
+read -p " Select menu : " opt
+echo -e ""
+case $opt in
+1) clear ; addpptp ;;
+2) clear ; delpptp ;;
+3) clear ; renewpptp ;;
+0) clear ; menu ;;
+x) exit ;;
+*) echo "Anda Salah Tekan" ; sleep 1 ; m-pptp ;;
 esac
