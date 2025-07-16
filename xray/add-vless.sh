@@ -43,7 +43,7 @@ vlesslink3="vless://${user}@${domain}:$tls?mode=gun&security=tls&encryption=none
 systemctl restart xray
 clear
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-vless.log
-echo -e "\E[44;1;39m        Vless Account        \E[0m" | tee -a /etc/log-create-vless.log
+echo -e "\E[44;1;39m        Akun Vless        \E[0m" | tee -a /etc/log-create-vless.log
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-vless.log
 echo -e "Remarks        : ${user}" | tee -a /etc/log-create-vless.log
 echo -e "Domain         : ${domain}" | tee -a /etc/log-create-vless.log
