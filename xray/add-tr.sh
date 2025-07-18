@@ -57,7 +57,7 @@ echo -e "Key            : ${user}" | tee -a /etc/log-create-trojan.log
 echo -e "Path           : /trojan-ws" | tee -a /etc/log-create-trojan.log
 echo -e "ServiceName    : trojan-grpc" | tee -a /etc/log-create-trojan.log
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-trojan.log
-echo -e "Expired On     : $exp" | tee -a /etc/log-create-trojan.log
+echo -e "Berlaku Sampai     : $exp" | tee -a /etc/log-create-trojan.log
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-trojan.log
 echo -e "Link TLS       : ${trojanlink}" | tee -a /etc/log-create-trojan.log
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-trojan.log
