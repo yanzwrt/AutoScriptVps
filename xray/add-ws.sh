@@ -110,7 +110,7 @@ echo -e "Network        : ws" | tee -a /etc/log-create-vmess.log
 echo -e "Path           : /vmess" | tee -a /etc/log-create-vmess.log
 echo -e "ServiceName    : vmess-grpc" | tee -a /etc/log-create-vmess.log
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-vmess.log
-echo -e "Expired On     : $exp" | tee -a /etc/log-create-vmess.log
+echo -e "Berlaku Sampai     : $exp" | tee -a /etc/log-create-vmess.log
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-vmess.log
 echo -e "Link TLS       : ${vmesslink1}" | tee -a /etc/log-create-vmess.log
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-vmess.log
